@@ -117,24 +117,25 @@ nav.scrolled { background: rgba(8,10,13,0.97); box-shadow: 0 1px 40px rgba(0,0,0
 
 /* ── HERO ── */
 .hero {
-  position: relative; min-height: 100vh;
-  display: flex; align-items: flex-end;
+  position: relative; min-height: 92vh;
+  display: flex; align-items: center;
   padding-top: var(--nav-h);
   overflow: hidden;
 }
 .hero-bg { position: absolute; inset: 0; }
-.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 42%; }
 .hero-bg::after {
   content: ""; position: absolute; inset: 0;
   background:
-    linear-gradient(to right, rgba(8,10,13,0.92) 0%, rgba(8,10,13,0.55) 55%, rgba(8,10,13,0.15) 100%),
-    linear-gradient(to top, rgba(8,10,13,0.9) 0%, transparent 50%);
+    linear-gradient(100deg, rgba(8,10,13,0.88) 0%, rgba(8,10,13,0.62) 42%, rgba(8,10,13,0.28) 72%, rgba(8,10,13,0.15) 100%),
+    linear-gradient(to top, rgba(8,10,13,0.55) 0%, transparent 35%);
 }
 .hero-inner {
   position: relative; z-index: 2;
-  max-width: 1400px; margin: 0 auto; padding: 5rem 4rem;
+  max-width: 1400px; margin: 0 auto; padding: 3rem 4rem;
   width: 100%;
 }
+.hero-content { max-width: 640px; }
 .hero-eyebrow {
   display: inline-flex; align-items: center; gap: 0.5rem;
   font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
@@ -607,28 +608,30 @@ footer { background: var(--black); border-top: 1px solid rgba(255,255,255,0.05);
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-bg">
-    <img src="https://images.pexels.com/photos/33814732/pexels-photo-33814732.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Modern auto repair shop interior" loading="eager">
+    <img src="https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Mechanic working under a car on a lift at Jack's Auto Repair" loading="eager">
   </div>
   <div class="hero-inner">
-    <div class="hero-eyebrow">Hurst, TX &nbsp;·&nbsp; Since Day One</div>
-    <h1>YOUR CAR.<br><span>FIXED RIGHT.</span><br>PRICED FAIR.</h1>
-    <p class="hero-sub">Jack's Auto Repair delivers expert service on every make and model - with zero upselling, transparent pricing, and a team that actually talks to you.</p>
-    <div class="hero-actions">
-      <a href="tel:8172825190" class="btn-gold"><svg width="16" height="16"><use href="#i-phone"/></svg> Call (817) 282-5190</a>
-      <a href="#contact" class="btn-outline"><svg width="16" height="16"><use href="#i-arrow"/></svg> Request Callback</a>
-    </div>
-    <div class="hero-trust">
-      <div class="hero-trust-item">
-        <svg width="16" height="16"><use href="#i-star"/></svg>
-        <span><strong>4.3 Stars</strong> · 107 Google Reviews</span>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Hurst, TX &nbsp;·&nbsp; Since Day One</div>
+      <h1>YOUR CAR.<br><span>FIXED RIGHT.</span><br>PRICED FAIR.</h1>
+      <p class="hero-sub">Jack's Auto Repair delivers expert service on every make and model - with zero upselling, transparent pricing, and a team that actually talks to you.</p>
+      <div class="hero-actions">
+        <a href="tel:8172825190" class="btn-gold"><svg width="16" height="16"><use href="#i-phone"/></svg> Call (817) 282-5190</a>
+        <a href="#contact" class="btn-outline"><svg width="16" height="16"><use href="#i-arrow"/></svg> Request Callback</a>
       </div>
-      <div class="hero-trust-item">
-        <svg width="16" height="16"><use href="#i-check"/></svg>
-        <span>All Makes &amp; Models</span>
-      </div>
-      <div class="hero-trust-item">
-        <svg width="16" height="16"><use href="#i-shield"/></svg>
-        <span>No Upsells, Ever</span>
+      <div class="hero-trust">
+        <div class="hero-trust-item">
+          <svg width="16" height="16"><use href="#i-star"/></svg>
+          <span><strong>4.3 Stars</strong> · 107 Google Reviews</span>
+        </div>
+        <div class="hero-trust-item">
+          <svg width="16" height="16"><use href="#i-check"/></svg>
+          <span>All Makes &amp; Models</span>
+        </div>
+        <div class="hero-trust-item">
+          <svg width="16" height="16"><use href="#i-shield"/></svg>
+          <span>No Upsells, Ever</span>
+        </div>
       </div>
     </div>
   </div>
