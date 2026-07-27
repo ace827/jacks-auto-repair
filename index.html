@@ -520,7 +520,9 @@ footer { background: var(--black); border-top: 1px solid rgba(255,255,255,0.05);
   .compare-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
-  .hero { padding-top: var(--nav-h); }
+  .hero { padding-top: var(--nav-h); align-items: flex-start; min-height: 100vh; }
+  .hero-inner { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+  .hero-content { max-width: 100%; text-align: left; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .stats-inner { grid-template-columns: 1fr 1fr; }
@@ -709,7 +711,7 @@ footer { background: var(--black); border-top: 1px solid rgba(255,255,255,0.05);
         <div class="mosaic-cell-label">Precision Work</div>
       </div>
       <div class="mosaic-cell reveal d2">
-        <img src="https://images.pexels.com/photos/8985971/pexels-photo-8985971.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mechanic at auto repair shop">
+        <img src="https://images.pexels.com/photos/8985615/pexels-photo-8985615.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mechanic inspecting a vehicle's underside with a work light">
         <div class="mosaic-cell-label">Professional Service</div>
       </div>
     </div>
