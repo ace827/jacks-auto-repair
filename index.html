@@ -11,7 +11,7 @@
 <script id="retell-widget"
   src="https://dashboard.retellai.com/retell-widget-v2.js"
   data-voice-public-key="public_key_1197daec2cd9ffad2bf20"
-  data-voice-agent-id="agent_07b071853432a31427d47d0f5c"
+  data-voice-agent-id="agent_a144ec0b116bcd4d8d7525bd78"
   data-title="AI Receptionist"
   data-color="#d97706"
   data-fab-text="AI Receptionist"
@@ -520,9 +520,10 @@ footer { background: var(--black); border-top: 1px solid rgba(255,255,255,0.05);
   .compare-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
-  .hero { padding-top: var(--nav-h); align-items: flex-start; min-height: 100vh; }
-  .hero-inner { padding-top: 3.5rem; padding-bottom: 3.5rem; }
-  .hero-content { max-width: 100%; text-align: left; }
+  .hero { padding-top: var(--nav-h); align-items: flex-start !important; justify-content: flex-start !important; min-height: 100vh; text-align: left !important; }
+  .hero-inner { padding-top: 3.5rem; padding-bottom: 3.5rem; text-align: left !important; margin-left: 0 !important; }
+  .hero-content { max-width: 100% !important; text-align: left !important; margin: 0 !important; }
+  .hero-eyebrow, .hero h1, .hero-sub, .hero-trust { text-align: left !important; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .stats-inner { grid-template-columns: 1fr 1fr; }
